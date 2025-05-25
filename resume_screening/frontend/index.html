@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Screening</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Upload Resumes & Rank Them</h2>
+
+    <form id="resume-form">
+        <label for="files">Upload Resumes (PDF/DOCX):</label>
+        <input type="file" id="files" multiple accept=".pdf, .docx" required>
+        
+        <label for="job-description">Enter Job Description:</label>
+        <textarea id="job-description" placeholder="Looking for a Data Scientist..." required></textarea>
+        
+        <button type="submit">Rank Resumes</button>
+    </form>
+
+    <h3>Ranking Results</h3>
+    <ul id="results"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
